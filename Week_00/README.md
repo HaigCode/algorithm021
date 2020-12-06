@@ -77,12 +77,12 @@ git remote add origin git@github.com:用户名/仓库名.git
 #### 5.4、新问题
 此时提交代码可以不用重复输入用户名与密码了，但是问题来了：当你拉代码的时候，会报如下错误：
 >From github.com:用户名/项目名
- * [new branch]      main       -> origin/main
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
+>* [new branch]      main       -> origin/main
+>There is no tracking information for the current branch.
+>Please specify which branch you want to merge with.
+>See git-pull(1) for details.
     git pull <remote> <branch>
-If you wish to set tracking information for this branch you can do so with:
+>If you wish to set tracking information for this branch you can do so with:
     git branch --set-upstream-to=origin/<branch> main
 
 #### 5.5、重新设置trach branch
