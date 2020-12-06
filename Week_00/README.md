@@ -52,3 +52,11 @@ ssh-keygen -t rsa -C “******@qq.com”
 ```
 执行：ssh -T git@github.com
 ```
+### 4、本地代码提交到远程仓库
+```
+git push -u origin master
+```
+or 
+```
+git push -u origin main
+```
