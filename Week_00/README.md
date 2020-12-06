@@ -60,3 +60,33 @@ or
 ```
 git push -u origin main
 ```
+### 5、GitHub设置ssh key后push代码依旧需要输入用户名、密码的解决方法
+#### 5.1、问题描述
+ Git生成密钥后将密钥配置到Github上，但是每次提交代码的时候还是要输入用户名和密码。操作步骤很是麻烦。
+#### 5.2、问题引入
+因为用的是https而不是ssh，更新origin为ssh格式即可。
+https的格式为：https://github.com/用户名/仓库名.git
+ssh的格式为：git@github.com:用户名/仓库名.git
+#### 5.3、解决方法
+```
+git remote remove origin
+git remote add origin git@github.com:用户名/仓库名.git
+```
+#### 5.4、新问题
+此时提交代码可以不用重复输入用户名与密码了，但是问题来了：当你拉代码的时候，会报如下错误：
+>From github.com:用户名/项目名
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+    git pull <remote> <branch>
+If you wish to set tracking information for this branch you can do so with:
+    git branch --set-upstream-to=origin/<branch> main
+#### 5.5 重新设置trach branch
+```
+git branch --set-upstream-to=origin/main main
+```
+or 
+```
+git branch --set-upstream-to=origin/<branch> main
+```
