@@ -67,11 +67,13 @@ git push -u origin main
 因为用的是https而不是ssh，更新origin为ssh格式即可。
 https的格式为：https://github.com/用户名/仓库名.git
 ssh的格式为：git@github.com:用户名/仓库名.git
+
 #### 5.3、解决方法
 ```
 git remote remove origin
 git remote add origin git@github.com:用户名/仓库名.git
 ```
+
 #### 5.4、新问题
 此时提交代码可以不用重复输入用户名与密码了，但是问题来了：当你拉代码的时候，会报如下错误：
 >From github.com:用户名/项目名
@@ -82,11 +84,19 @@ See git-pull(1) for details.
     git pull <remote> <branch>
 If you wish to set tracking information for this branch you can do so with:
     git branch --set-upstream-to=origin/<branch> main
-#### 5.5 重新设置trach branch
+
+#### 5.5、重新设置trach branch
 ```
 git branch --set-upstream-to=origin/main main
 ```
 or 
 ```
 git branch --set-upstream-to=origin/<branch> main
+```
+#### 5.6、warning: LF will be replaced by CRLF in 解决办法
+warning: LF will be replaced by CRLF in
+原因是存在符号转义问题
+windows中的换行符为 CRLF， 而在linux下的换行符为LF，所以在执行add . 时出现提示，解决办法：
+```
+git config --global core.autocrlf false
 ```
