@@ -36,13 +36,13 @@
 	- 工程运用
 	- 跳表：升维思想+空间换时间
 ## 1.4.参考链接：
-	[LRU缓存算法](https://www.jianshu.com/p/b1ab4a170c3c)
-	[146. LRU 缓存机制]https://leetcode-cn.com/problems/lru-cache/)
-	[Redis - Skip List：跳跃表](https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)
-	[为啥 Redis 使用跳表（Skip List）而不是使用 Red-Black？]https://www.zhihu.com/question/20202931)
-	[Java 源码分析（ArrayList）](http://developer.classpath.org/doc/java/util/ArrayList-source.html)
-	[Linked List 的标准实现代码](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/)
-	[Java 源码分析（LinkedList）](http://developer.classpath.org/doc/java/util/LinkedList-source.html)
+	LRU缓存算法:[LRU缓存算法](https://www.jianshu.com/p/b1ab4a170c3c)
+	146. LRU 缓存机制:[146. LRU 缓存机制]https://leetcode-cn.com/problems/lru-cache/)
+	Redis - Skip List：跳跃表:[Redis - Skip List：跳跃表](https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)
+	为啥 Redis 使用跳表（Skip List）而不是使用 Red-Black？:[为啥 Redis 使用跳表（Skip List）而不是使用 Red-Black？]https://www.zhihu.com/question/20202931)
+	Java 源码分析（ArrayList）:[Java 源码分析（ArrayList）](http://developer.classpath.org/doc/java/util/ArrayList-source.html)
+	Linked List 的标准实现代码:[Linked List 的标准实现代码](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/)
+	Java 源码分析（LinkedList）:[Java 源码分析（LinkedList）](http://developer.classpath.org/doc/java/util/LinkedList-source.html)
 
 # 2.实战题目解析：移动零
 ## 2.1.练习步骤：
